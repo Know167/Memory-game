@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+                <script src="https://cdn.tailwindcss.com"></script>
+
+    </head>
+    <body>
+        <div class="min-h-screen bg-background">
+            <header
+                id="main-header"
+                class="w-full p-0 bg-slate-800 text-white shadow-lg sticky top-0 z-50"></header>
+
+            <!-- {/* Hero Section - Inspired by the modular layout */} -->
+            <section class="w-full max-w-[120rem] mx-auto px-6 py-16">
+                <div
+                    class="grid grid-cols-1 lg:grid-cols-12 gap-8 min-h-[600px]">
+                    <!-- {/* Main Hero Content */} -->
+                    <div class="lg:col-span-5 flex flex-col justify-center">
+                        <div>
+                            <h1
+                                class="font-heading text-6xl lg:text-7xl font-bold text-secondary leading-tight mb-6">
+                                Train Your
+                                <br />
+                                <span class="text-primary">Memory</span>
+                            </h1>
+                            <p
+                                class="font-paragraph text-lg text-secondary mb-8 max-w-md">
+                                Challenge yourself with our engaging memory card
+                                game. Flip cards, find matches, and climb the
+                                leaderboard.
+                            </p>
+                            <a href="game.html">
+                                <button
+                                    class="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-4 h-auto flex items-center gap-3 rounded-lg hover:cursor-pointer ">
+                                    <!-- Play Now SVG -->
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="lucide lucide-play-icon lucide-play mr-2 h-5 w-5">
+                                        <path
+                                            d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" />
+                                    </svg>
+                                    Start Playing
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- {/* Feature Cards Grid */} -->
+                    <div class="lg:col-span-7 grid grid-cols-2 gap-6">
+                        <!-- {/* Primary Feature div */} -->
+                        <div class="col-span-2 lg:col-span-1">
+                            <div
+                                class="bg-primary text-primary-foreground p-8 h-full rounded-3xl border-0">
+                                <!-- Brain SVG -->
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-brain-icon lucide-brain h-12 w-12 mb-4">
+                                    <path d="M12 18V5" />
+                                    <path
+                                        d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4" />
+                                    <path
+                                        d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5" />
+                                    <path
+                                        d="M17.997 5.125a4 4 0 0 1 2.526 5.77" />
+                                    <path d="M18 18a4 4 0 0 0 2-7.464" />
+                                    <path
+                                        d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517" />
+                                    <path d="M6 18a4 4 0 0 1-2-7.464" />
+                                    <path
+                                        d="M6.003 5.125a4 4 0 0 0-2.526 5.77" />
+                                </svg>
+                                <h3
+                                    class="font-heading text-2xl font-bold mb-3">
+                                    Boost Focus
+                                </h3>
+                                <p class="font-paragraph text-sm opacity-90">
+                                    Enhance your concentration and cognitive
+                                    abilities through strategic memory
+                                    challenges.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- {/* Secondary Feature Card */} -->
+                        <div class="col-span-2 lg:col-span-1">
+                            <div
+                                class="bg-secondary text-secondary-foreground p-8 h-full rounded-3xl border-0">
+                                <!-- Trophy SVG -->
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-trophy-icon lucide-trophy h-12 w-12 mb-4">
+                                    <path
+                                        d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978" />
+                                    <path
+                                        d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978" />
+                                    <path d="M18 9h1.5a1 1 0 0 0 0-5H18" />
+                                    <path d="M4 22h16" />
+                                    <path
+                                        d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" />
+                                    <path d="M6 9H4.5a1 1 0 0 1 0-5H6" />
+                                </svg>
+                                <h3
+                                    class="font-heading text-2xl font-bold mb-3">
+                                    Compete
+                                </h3>
+                                <p class="font-paragraph text-sm opacity-90">
+                                    Challenge players worldwide and see your
+                                    name on the global leaderboard.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- {/* Stats Card */} -->
+                        <div class="col-span-1">
+                            <div
+                                class="bg-background border-2 border-mediumgray p-6 h-full rounded-3xl">
+                                <!-- User SVG -->
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-users-icon lucide-users h-12 w-12 mb-4">
+                                    <path
+                                        d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                    <path d="M16 3.128a4 4 0 0 1 0 7.744" />
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                    <circle cx="9" cy="7" r="4" />
+                                </svg>
+                                <div class="text-center">
+                                    <div
+                                        class="font-heading text-3xl font-bold text-secondary">
+                                        12K+
+                                    </div>
+                                    <div
+                                        class="font-paragraph text-sm text-secondary opacity-70">
+                                        Active Players
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- {/* Arrow Indicator */} -->
+                        <div
+                            class="col-span-1 flex items-center justify-center">
+                            <div
+                                class="bg-mediumgray/30 p-6 h-full rounded-3xl border-0 flex items-center justify-center">
+                                <div class="text-6xl text-secondary">↓</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- {/* Features Section */} -->
+            <section class="w-full max-w-[120rem] mx-auto px-6 py-16">
+                <div class="text-center mb-12">
+                    <h2
+                        class="font-heading text-5xl font-bold text-secondary mb-6">
+                        Why Choose
+                        <span class="text-primary">MemoryMaster</span>?
+                    </h2>
+                    <p
+                        class="font-paragraph text-lg text-secondary max-w-3xl mx-auto">
+                        Our scientifically-designed memory challenges help
+                        improve cognitive function while providing endless
+                        entertainment.
+                    </p>
+                </div>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- {/* Feature 1 */} -->
+                    <div>
+                        <div
+                            class="bg-background border-2 border-mediumgray p-8 rounded-3xl h-full text-center hover:border-primary transition-colors duration-300">
+                            <div
+                                class="bg-primary text-primary-foreground rounded-2xl p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                                <!-- Brain SVG -->
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-brain-icon lucide-brain h-8 w-8">
+                                    <path d="M12 18V5" />
+                                    <path
+                                        d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4" />
+                                    <path
+                                        d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5" />
+                                    <path
+                                        d="M17.997 5.125a4 4 0 0 1 2.526 5.77" />
+                                    <path d="M18 18a4 4 0 0 0 2-7.464" />
+                                    <path
+                                        d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517" />
+                                    <path d="M6 18a4 4 0 0 1-2-7.464" />
+                                    <path
+                                        d="M6.003 5.125a4 4 0 0 0-2.526 5.77" />
+                                </svg>
+                            </div>
+                            <h3
+                                class="font-heading text-2xl font-bold text-secondary mb-4">
+                                Cognitive Training
+                            </h3>
+                            <p class="font-paragraph text-secondary opacity-70">
+                                Scientifically proven exercises that enhance
+                                memory, focus, and mental agility through
+                                engaging gameplay.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- {/* Feature 2 */} -->
+                    <div>
+                        <div
+                            class="bg-background border-2 border-mediumgray p-8 rounded-3xl h-full text-center hover:border-primary transition-colors duration-300">
+                            <div
+                                class="bg-secondary text-secondary-foreground rounded-2xl p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                                <!-- Zap SVG -->
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-zap-icon lucide-zap h-8 w-8">
+                                    <path
+                                        d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" />
+                                </svg>
+                            </div>
+                            <h3
+                                class="font-heading text-2xl font-bold text-secondary mb-4">
+                                Quick Sessions
+                            </h3>
+                            <p class="font-paragraph text-secondary opacity-70">
+                                Perfect for busy schedules. Complete a full
+                                brain training session in just 2-3 minutes.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- {/* Feature 3 */} -->
+                    <div>
+                        <div
+                            class="bg-background border-2 border-mediumgray p-8 rounded-3xl h-full text-center hover:border-primary transition-colors duration-300">
+                            <div
+                                class="bg-primary text-primary-foreground rounded-2xl p-4 w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                                <!-- Target SVG -->
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-target-icon lucide-target h-8 w-8">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <circle cx="12" cy="12" r="6" />
+                                    <circle cx="12" cy="12" r="2" />
+                                </svg>
+                            </div>
+                            <h3
+                                class="font-heading text-2xl font-bold text-secondary mb-4">
+                                Progress Tracking
+                            </h3>
+                            <p class="font-paragraph text-secondary opacity-70">
+                                Monitor your improvement over time with detailed
+                                statistics and achievement badges.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- {/* Call to Action Section */} -->
+            <section class="w-full max-w-[120rem] mx-auto px-6 py-16">
+                <div
+                    class="bg-primary text-primary-foreground p-16 rounded-3xl border-0 text-center">
+                    <!-- Trophy SVG -->
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-trophy-icon lucide-trophy h-20 w-20 mx-auto mb-8">
+                        <path
+                            d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978" />
+                        <path
+                            d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978" />
+                        <path d="M18 9h1.5a1 1 0 0 0 0-5H18" />
+                        <path d="M4 22h16" />
+                        <path
+                            d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" />
+                        <path d="M6 9H4.5a1 1 0 0 1 0-5H6" />
+                    </svg>
+                    <h2 class="font-heading text-5xl font-bold mb-6">
+                        Ready to Challenge Your Mind?
+                    </h2>
+                    <p
+                        class="font-paragraph text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+                        Join thousands of players worldwide and start your
+                        journey to better memory and cognitive performance.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="game.html">
+                            <button
+                                class="bg-secondary-foreground text-primary hover:bg-primary/90 hover:cursor-pointer text-lg px-8 py-4 h-auto flex items-center gap-3 rounded-lg">
+                                <!-- Play Now SVG -->
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-play-icon lucide-play mr-2 h-5 w-5">
+                                    <path
+                                        d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z" />
+                                </svg>
+                                Play Now
+                            </button>
+                        </a>
+
+                        <a href="rankings.html">
+                            <button
+                                class="bg-transparent rounded-lg border border-secondary text-primary-foreground hover:bg-foreground hover:text-primary hover:cursor-pointer text-lg px-8 py-4 h-auto">
+                                View Leaderboard
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- {/* Footer */} -->
+            <footer
+                class="w-full bg-secondary text-secondary-foreground py-12 mt-16">
+                <div class="max-w-[120rem] mx-auto px-6">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div>
+                            <h3 class="font-heading text-2xl font-bold mb-4">
+                                MemoryMaster
+                            </h3>
+                            <p class="font-paragraph text-sm opacity-90">
+                                The ultimate memory training platform for
+                                players of all ages.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="font-heading text-lg font-bold mb-4">
+                                Quick as
+                            </h4>
+                            <div class="space-y-2">
+                                <a
+                                    href="game.html"
+                                    class="font-paragraph text-sm opacity-90 hover:opacity-100 block">
+                                    Play Game
+                                </a>
+                                <a
+                                    href="rankings.html"
+                                    class="font-paragraph text-sm opacity-90 hover:opacity-100 block">
+                                    Rankings
+                                </a>
+                                <button
+                                    onClick="{actions.login}"
+                                    class="font-paragraph text-sm opacity-90 hover:opacity-100 block text-left">
+                                    Sign In
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-heading text-lg font-bold mb-4">
+                                Game Stats
+                            </h4>
+                            <div
+                                class="space-y-2 font-paragraph text-sm opacity-90">
+                                <div>Total Players: 12,000+</div>
+                                <div>Games Played: 50,000+</div>
+                                <div>Best Score: 8 moves</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="./components/navbar.js"></script>
+    </body>
+</html>

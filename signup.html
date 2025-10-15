@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sign In - MemoryMaster</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+                <script src="https://cdn.tailwindcss.com"></script>
+
+        
+    </head>
+    <body class="bg-background min-h-screen flex items-center justify-center">
+        <div
+            class="w-full max-w-md mx-auto bg-background rounded-3xl shadow-lg border-2 border-mediumgray p-8">
+            <div class="text-center mb-8">
+                <h1 class="font-heading text-4xl font-bold text-slate-700 mb-2">
+                    Sign Up
+                </h1>
+                <p class="font-paragraph text-slate-600">
+                    Welcome back to
+                    <span class="text-primary font-bold">MemoryMaster</span>
+                </p>
+            </div>
+            <form id="signup-form" class="space-y-6">
+                <div>
+                    <label
+                        for="username"
+                        class="block font-paragraph text-secondary mb-2"
+                        >Username</label
+                    >
+                    <input
+                        type="username"
+                        id="username"
+                        name="username"
+                        required
+                        class="w-full px-4 py-3 rounded-lg border border-mediumgray bg-background text-secondary focus:outline-none focus:border-primary transition" />
+                </div>
+                <div>
+                    <label
+                        for="email"
+                        class="block font-paragraph text-secondary mb-2"
+                        >Email</label
+                    >
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        class="w-full px-4 py-3 rounded-lg border border-mediumgray bg-background text-secondary focus:outline-none focus:border-primary transition" />
+                </div>
+                <div>
+                    <label
+                        for="password"
+                        class="block font-paragraph text-secondary mb-2"
+                        >Password</label
+                    >
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        required
+                        class="w-full px-4 py-3 rounded-lg border border-mediumgray bg-background text-secondary focus:outline-none focus:border-primary transition" />
+                </div>
+                
+                <button
+                    type="submit"
+                    class="w-full bg-primary text-secondary font-heading text-lg py-3 rounded-lg hover:bg-primary/90 transition flex items-center justify-center gap-2">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="22"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-log-in-icon lucide-log-in">
+                        <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
+                        <polyline points="10 17 15 12 10 7" />
+                        <line x1="15" y1="12" x2="3" y2="12" />
+                    </svg>
+                    Sign Up
+                </button>
+            </form>
+            <div class="mt-6 text-center font-paragraph text-slate-600">
+                Already have an account?
+                <a href="signin.html" class="text-primary font-bold hover:underline"
+                    >Sign In</a
+                >
+            </div>
+        </div>
+        <script src="./components/signup.js"></script>
+    </body>
+</html>

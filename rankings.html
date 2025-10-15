@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rankings</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        
+    </head>
+    <body>
+        <header
+            id="main-header"
+            class="w-full bg-secondary text-white shadow-lg sticky top-0 z-50"></header>
+        <main class="mx-auto px-6 py-8">
+            <!-- Back Navigation -->
+            <a
+                href="/"
+                class="inline-flex items-center font-[200] transition-colors hover:text-primary mb-8">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-left-icon lucide-arrow-left h-4 w-8">
+                    <path d="m12 19-7-7 7-7" />
+                    <path d="M19 12H5" />
+                </svg>
+                Back to Home
+            </a>
+            <div class="mb-12">
+                 <h1 class="font-heading text-3xl lg:text-5xl mb-4 text-center">
+                    Global <span class="text-primary">Rankings</span>
+                </h1>
+                <p class="text-md text-gray-700 mb-6 text-center max-w-2xl mx-auto">
+                    See how you stack up against memory masters from around the world. Lower scores mean fewer moves to complete the game.
+                </p>
+            </div>
+
+            <!-- Stats Cards  -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <div
+                    class="bg-primary text-primary-foreground p-6 rounded-3xl border-0 text-center">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-users-icon lucide-users h-12 w-12 mx-auto mb-3">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                        <path d="M16 3.128a4 4 0 0 1 0 7.744" />
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                        <circle cx="9" cy="7" r="4" />
+                    </svg>
+                    <div
+                        class="font-heading text-3xl font-bold mb-1"
+                        id="active-players-count">100</div>
+                    <div class="font-paragraph text-sm opacity-90">
+                        Active Players
+                    </div>
+                </div>
+
+                <div
+                    class="bg-secondary text-secondary-foreground p-6 rounded-3xl border-0 text-center">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-trophy-icon lucide-trophy h-12 w-12 mx-auto mb-3">
+                        <path
+                            d="M10 14.66v1.626a2 2 0 0 1-.976 1.696A5 5 0 0 0 7 21.978" />
+                        <path
+                            d="M14 14.66v1.626a2 2 0 0 0 .976 1.696A5 5 0 0 1 17 21.978" />
+                        <path d="M18 9h1.5a1 1 0 0 0 0-5H18" />
+                        <path d="M4 22h16" />
+                        <path
+                            d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" />
+                        <path d="M6 9H4.5a1 1 0 0 1 0-5H6" />
+                    </svg>
+                    <div class="font-heading text-3xl font-bold mb-1">
+                        14
+                    </div>
+                    <div class="font-paragraph text-sm opacity-90">
+                        Best Score Ever
+                    </div>
+                </div>
+
+                <div
+                    class="bg-background border-2 border-mediumgray p-6 rounded-3xl text-center">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="lucide lucide-crown-icon lucide-crown h-12 w-12 mx-auto mb-3 text-primary">
+                        <path
+                            d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z" />
+                        <path d="M5 21h14" />
+                    </svg>
+                    <div
+                        class="font-heading text-3xl font-bold text-secondary mb-1">
+                        156
+                    </div>
+                    <div
+                        class="font-paragraph text-sm text-secondary opacity-70">
+                        Games by Leader
+                    </div>
+                </div>
+            </div>
+
+            <!--  Top 3 Podium  -->
+            <div class="mb-12">
+                <h2
+                    class="font-heading text-4xl font-bold text-secondary text-center mb-10">
+                    Top Champions
+                </h2>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-3 gap-9 max-w-4xl mx-auto"
+                    id="top-three-players"></div>
+            </div>
+
+            <!-- Full Leaderboard  -->
+            <div>
+                <h2
+                    class="font-heading text-4xl font-bold text-secondary mb-8">
+                    Complete Leaderboard
+                </h2>
+
+                <div id="leaderboard" class="space-y-4"></div>
+            </div>
+        </main>
+        <script src="./components/navbar.js"></script>
+        <script src="./components/rankings.js"></script>
+    </body>
+</html>
