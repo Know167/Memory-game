@@ -16,13 +16,13 @@ const actions = {
     },
     logout: () => {
         localStorage.removeItem("isAuthenticated");
-        window.location.href = "index.html";
+        window.location.href = "./index.html";
         isAuthenticated = false;
         renderNavbar();
         alert("You have been signed out.");
     },
     signup: () => {
-        window.location.href = "signup.html";
+        window.location.href = "./signup.html";
         renderNavbar();
     },
 };
@@ -42,9 +42,9 @@ const renderNavbar = () => {
     if (isAuthenticated) {
         userControls = `
       <div class="flex items-center gap-6">
-        ${generateNavLink("Game", "game.html")}
-        ${generateNavLink("Profile", "profile.html")}        
-        ${generateNavLink("Rankings", "rankings.html")}
+        ${generateNavLink("Game", "./game.html")}
+        ${generateNavLink("Profile", "./profile.html")}        
+        ${generateNavLink("Rankings", "./rankings.html")}
 
         <div class="flex items-center gap-4 bg-background-green rounded-2xl px-4 py-2 ">
           <span class="font-paragraph text-sm text-primary">
@@ -60,7 +60,7 @@ const renderNavbar = () => {
     } else {
         userControls = `
       <div class="flex items-center gap-4">
-      ${generateNavLink("Rankings", "rankings.html")}
+      ${generateNavLink("Rankings", "./rankings.html")}
 
         <button id="signInButton"
                 class="border  font-bold px-4 py-2 rounded-md transition-colors text-sm hover:bg-primary hover:text-secondary">
@@ -77,7 +77,7 @@ const renderNavbar = () => {
     const navbarHTML = `
     <div class="max-w-[120rem] mx-auto py-6 px-4 sm:px-6 lg:px-8">
       <nav class="flex justify-between items-center">
-        <a href="/"
+        <a href="./"
            class="font-heading text-3xl font-bold text-primary  transition-colors">
           MemoryMaster
         </a>

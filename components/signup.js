@@ -78,6 +78,6 @@ document
         if (result.success) {
             localStorage.setItem("isAuthenticated", true);
 
-            window.location.href = "/";
+            window.location.href = "./";
         }
     });

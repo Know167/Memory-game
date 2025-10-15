@@ -60,6 +60,6 @@ document
         const result = await signIn(username, password);
         alert(result.message);
         if (result.success) {
-            window.location.href = "index.html"; // Redirect to homepage on successful sign-in
+            window.location.href = "./index.html"; // Redirect to homepage on successful sign-in
         }
     });
