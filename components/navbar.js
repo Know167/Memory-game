@@ -75,7 +75,7 @@ const renderNavbar = () => {
     }
 
     const navbarHTML = `
-    <div class="max-w-[120rem] mx-auto py-6 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-[120rem] mx-auto ">
       <nav class="flex justify-between items-center">
         <a href="./index.html"
            class="font-heading text-3xl font-bold text-primary  transition-colors">
