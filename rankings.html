@@ -7,7 +7,6 @@
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="styles.css" />
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        
     </head>
     <body>
         <header
@@ -35,11 +34,13 @@
                 Back to Home
             </a>
             <div class="mb-12">
-                 <h1 class="font-heading text-3xl lg:text-5xl mb-4 text-center">
+                <h1 class="font-heading text-3xl lg:text-5xl mb-4 text-center">
                     Global <span class="text-primary">Rankings</span>
                 </h1>
-                <p class="text-md text-gray-700 mb-6 text-center max-w-2xl mx-auto">
-                    See how you stack up against memory masters from around the world. Lower scores mean fewer moves to complete the game.
+                <p
+                    class="text-md text-gray-700 mb-6 text-center max-w-2xl mx-auto">
+                    See how you stack up against memory masters from around the
+                    world. Lower scores mean fewer moves to complete the game.
                 </p>
             </div>
 
@@ -65,7 +66,9 @@
                     </svg>
                     <div
                         class="font-heading text-3xl font-bold mb-1"
-                        id="active-players-count">100</div>
+                        id="active-players-count">
+                        100
+                    </div>
                     <div class="font-paragraph text-sm opacity-90">
                         Active Players
                     </div>
@@ -94,9 +97,7 @@
                             d="M6 9a6 6 0 0 0 12 0V3a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1z" />
                         <path d="M6 9H4.5a1 1 0 0 1 0-5H6" />
                     </svg>
-                    <div class="font-heading text-3xl font-bold mb-1">
-                        14
-                    </div>
+                    <div class="font-heading text-3xl font-bold mb-1">14</div>
                     <div class="font-paragraph text-sm opacity-90">
                         Best Score Ever
                     </div>
@@ -144,15 +145,14 @@
 
             <!-- Full Leaderboard  -->
             <div>
-                <h2
-                    class="font-heading text-4xl font-bold text-secondary mb-8">
+                <h2 class="font-heading text-4xl font-bold text-secondary mb-8">
                     Complete Leaderboard
                 </h2>
 
                 <div id="leaderboard" class="space-y-4"></div>
             </div>
         </main>
-        <script src="./components/navbar.js"></script>
-        <script src="./components/rankings.js"></script>
+        <script src="./js/components/navbar.js"></script>
+        <script src="./js/rankings.js"></script>
     </body>
 </html>

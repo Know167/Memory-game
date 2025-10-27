@@ -35,13 +35,13 @@ const generateNavLink = (text, href) => `
   </a>
 `;
 
-// Function to generate the correct navbar HTML
+// Update the mobile menu to arrange links vertically
 const renderNavbar = () => {
     let userControls;
 
     if (isAuthenticated) {
         userControls = `
-      <div class="flex items-center gap-6">
+      <div class="hidden md:flex items-center gap-6">
         ${generateNavLink("Game", "./game.html")}
         ${generateNavLink("Profile", "./profile.html")}        
         ${generateNavLink("Rankings", "./rankings.html")}
@@ -59,7 +59,7 @@ const renderNavbar = () => {
     `;
     } else {
         userControls = `
-      <div class="flex items-center gap-4">
+      <div class="hidden md:flex items-center gap-4">
       ${generateNavLink("Rankings", "./rankings.html")}
 
         <button id="signInButton"
@@ -81,7 +81,18 @@ const renderNavbar = () => {
            class="font-heading text-3xl font-bold text-primary  transition-colors">
           MemoryMaster
         </a>
-        <div class="flex items-center gap-3">
+        <button id="hamburgerButton" class="md:hidden text-primary focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5M3.75 12h16.5M3.75 18.75h16.5" />
+          </svg>
+        </button>
+        <div id="mobileMenu" class="hidden md:hidden flex flex-col items-start gap-4 bg-white shadow-lg rounded-lg p-4 absolute top-16 right-4 z-50">
+          ${generateNavLink("Game", "./game.html")}
+          ${generateNavLink("Profile", "./profile.html")}
+          ${generateNavLink("Rankings", "./rankings.html")}
+          <button id="mobileSignOutButton" class="border border-primary text-primary text-sm px-4 py-2 rounded-md hover:bg-primary hover:text-secondary transition-colors">Sign Out</button>
+        </div>
+        <div class="hidden md:flex items-center gap-3">
         ${userControls}
         </div>
       </nav>
@@ -91,9 +102,19 @@ const renderNavbar = () => {
     headerElement.innerHTML = navbarHTML;
 
     // Add event listeners after the HTML is rendered
+    const hamburgerButton = document.getElementById("hamburgerButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    hamburgerButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+
     if (isAuthenticated) {
         document
             .getElementById("signOutButton")
+            .addEventListener("click", actions.logout);
+        document
+            .getElementById("mobileSignOutButton")
             .addEventListener("click", actions.logout);
     } else {
         document

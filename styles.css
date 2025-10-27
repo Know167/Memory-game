@@ -141,6 +141,7 @@ nav a {
 .border-primary {
     border-color: rgb(110, 255, 62);
 }
+
 /* Custom Font Families */
 .font-heading {
     font-family: "avenir-lt-w01_85-heavy1475544", sans-serif;
@@ -148,3 +149,14 @@ nav a {
 .font-paragraph {
     font-family: "avenir-lt-w01_35-light1475496", sans-serif;
 }
+
+/* Add styles for the hamburger menu background */
+#mobileMenu {
+    background-color: rgb(0, 0, 0); /* Use the dark background color */
+    color: rgb(
+        110,
+        255,
+        62
+    ); /* Ensure text is visible with the primary color */
+}
+

@@ -170,9 +170,10 @@ const handleCardClick = (cardId) => {
 
 const renderGameBoard = () => {
     gameBoard.innerHTML = ""; // Clear the board
+
     cards.forEach((card) => {
         const cardElement = document.createElement("div");
-        cardElement.className = `w-32 h-32 rounded-md border mx-auto bg-secondary text-primary cursor-pointer flex items-center justify-center text-lg md:text-2xl font-bold transition-all duration-300 ${
+        cardElement.className = `w-16 h-16  md:w-32 md:h-32 rounded-md border mx-auto bg-secondary text-primary cursor-pointer flex items-center justify-center text-lg md:text-2xl font-bold transition-all duration-300 ${
             card.isFlipped || card.isMatched
                 ? "text-white border-green-500 shadow-lg text-4xl lg:text-5xl"
                 : " text-primary border-gray-300  hover:shadow-lg"
